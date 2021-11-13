@@ -5,6 +5,7 @@ body {
     background-color: #D9D9D9;
     justify-content: center;
     align-content: center;
+    clear: both;
 }
 
 .content {
