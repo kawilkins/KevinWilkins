@@ -1,0 +1,25 @@
+/*Body parameters*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-content: center;
+    clear: both;
+}
+
+.content {
+    padding: 10px;
+    background-color: #E6E6E6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Content formatting */
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: max-content max-content;
+    background-color: #E6E6E6;
+    padding: 10px;
+    align-content: center;
+}
