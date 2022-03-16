@@ -5,6 +5,7 @@ body {
     background-color: #D9D9D9;
     justify-content: center;
     margin: auto;
+    width: auto;
     clear: both;
 }
 
@@ -12,8 +13,11 @@ body {
 
 .content {
     padding: 10px;
+    align-content: center;
     margin: auto;
+    max-width: 90%;
     background-color: #E6E6E6;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,8 +25,9 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto;
+    max-width: 93%;
+    margin: auto;
     background-color: #E6E6E6;
-    padding: 20px;
     align-content: center;
 }
 
@@ -37,4 +42,10 @@ body {
 /* Buy Me A Coffee */
 .BuyMeCoffee {
     float: left;
+}
+
+/* Website Version */
+.SiteVersion {
+    text-align: right;
+    padding-right: 10px;
 }

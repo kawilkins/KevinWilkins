@@ -4,8 +4,8 @@ nav {
     height: 70px;
     background-color: #000000;
     padding-top: 0px;
-    overflow: auto;
     clear: both;
+    margin: auto;
 }
 
 nav p {
@@ -14,12 +14,11 @@ nav p {
     font-size: 20px;
     line-height: 40px;
     float: left;
-    padding: 0px 20px
+    padding: 0px 20px;
 }
 
 nav ul {
     float: left;
-    border-radius: 25px;
 }
 
 nav ul li {
@@ -27,6 +26,7 @@ nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    border-radius: 25px;
 }
 
 nav ul li a {
