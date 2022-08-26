@@ -35,7 +35,9 @@
                 <img style="float: left; margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" src="images/kwilkins.jpg" height="165px" width="200px">
             
                 <p class="paragraph">
-                    Email:  <a href="mailto:kwilkins@mail.com" class="email">kwilkins@mail.com</a>
+                    <center>
+                        Email:  <a href="mailto:kwilkins@mail.com" class="email">kwilkins@mail.com</a>
+                    </center>
                 </p>
             </div>
 
