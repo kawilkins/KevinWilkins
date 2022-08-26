@@ -23,7 +23,7 @@
         </ul>
 
         <div class="SiteVersion">
-            <i><font color=white>Version 0.2.1</font></i>
+            <i><font color=white>Version 0.3.0</font></i>
         </div>
     </nav>
 
