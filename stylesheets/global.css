@@ -10,7 +10,6 @@ body {
 }
 
 /* Content formatting */
-
 .content {
     padding: 10px;
     align-content: center;
@@ -23,20 +22,32 @@ body {
 
 .grid-container {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: auto auto;
-    max-width: 93%;
+    max-width: 90%;
     margin: auto;
     background-color: #E6E6E6;
     align-content: center;
 }
 
+/* Paragraph */
 .paragraph {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
     margin: auto;
     word-wrap: break-word;
     white-space: pre-line;
+}
+
+/* Hyperlinks */
+
+.email {
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.hyperlink {
+    text-decoration: none;
 }
 
 /* Buy Me A Coffee */
