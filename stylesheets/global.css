@@ -1,5 +1,5 @@
 /*Body parameters*/
-body {
+.main {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
@@ -23,11 +23,17 @@ body {
 .grid-container {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: auto auto;
-    max-width: 90%;
+    max-width: auto;
     margin: auto;
     background-color: #E6E6E6;
     align-content: center;
+}
+
+.profilePicture {
+    float: left;
+    margin: 10px;
+    height: 165px;
+    width: 200px;
 }
 
 /* Paragraph */
@@ -40,7 +46,6 @@ body {
 }
 
 /* Hyperlinks */
-
 .email {
     font-family: monospace;
     text-decoration: none;
@@ -59,4 +64,6 @@ body {
 .SiteVersion {
     text-align: right;
     padding-right: 10px;
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
 }
