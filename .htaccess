@@ -2,4 +2,4 @@
 # HTID:18210030: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18210030:
-DirectoryIndex index.php
+DirectoryIndex index.htm
