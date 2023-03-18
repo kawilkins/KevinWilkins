@@ -3,4 +3,7 @@
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18210030:
 DirectoryIndex index.html
+
 Options -Indexes
+
+ErrorDocument 404 /error/404.html
