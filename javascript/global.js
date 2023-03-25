@@ -1,5 +1,5 @@
 // Website version
-const siteVersion = '0.4.1';
+const siteVersion = '1.0.0';
 document.getElementById('revision').innerHTML = "v" + siteVersion;
 
 // Email
