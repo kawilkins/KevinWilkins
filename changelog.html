@@ -4,32 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover my evolving portfolio of web development and Linux administration skills on my personal website.">
+
+        <link rel="icon" type="image/x-icon" href="images/WilkinsLogo.ico">
 
         <link rel="stylesheet" type="text/css" href="css/global.css">
         <link rel="stylesheet" type="text/css" href="css/navigation.css">
         <link rel="stylesheet" type="text/css" href="css/changelog.css">
     
         <script src="javascript/global.js" defer></script>
-
-        <link rel="icon" type="image/x-icon" href="images/WilkinsLogo.ico">
+        <script src="javascript/navigation.js" defer></script>
 
         <title>Kevin Wilkins / Change Log</title>
     </head>
     <body class="main">
-        <!--Navigation-->
-        <div class="nav" id="siteNavigation">
-            <p style="font-family: 'Courier New', Courier, monospace; size: 18px; cursor: default;">
-                Kevin Wilkins
-            </p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="changelog.html">Change Log</a></li>
-                <li><a href="pwgen.html">Password Generator</a></li>
-            </ul>
-  
-            <div id="revision" class="SiteVersion"></div>
-        </div>
-
+        
+        <top-navigation></top-navigation>
+        
         <!--Content-->
         <div class="content">
             <div class="grid-container">
@@ -41,7 +32,7 @@
                     <h2>What is a "Change Log"?</h2>
 
                     <p class="LogSummary">
-                        A <i>change log</i> is a list of changes made to a project such as a website or computer program.  Typically this list will include records of new features, bug fixes, etc.  Changes are usually logged in chronological order and likely include a heading that indicates the version.
+                        A <i>change log</i> is a list of changes made to a project such as a website, application, or computer program.  Typically this list will include records of new features, bug fixes, etc.  Anything that has changed can be considered part of the change log.  Changes are usually logged in chronological order and likely include a heading that indicates the version.
                     </p>
 
                     <p>
@@ -49,6 +40,14 @@
                     </p>
                 </div>
                 <div class="LogDetails">
+                    <h3>Version 1.0.0</h3>
+                    <ul>
+                        <li>New feature - Centered top navigation</li>
+                        <li>Bugfix - Moved "Report a Bug" to main content of home page</li>
+                        <li>Edit - Moved website version to main content.</li>
+                        <li>Edit - Add version to Password Generator</li>
+                    </ul>
+                    <hr>
                     <h3>Version 0.4.1</h3>
                     <ul>
                         <li>New feature - Error 403 page</li>
@@ -68,6 +67,5 @@
                 </div>
             </div>
         </div>
-        <a href="https://github.com/kawilkins/KevinWilkins/issues" style="text-decoration: none;" target="_blank">Report A Bug or Issue</a>
     </body>
 </html>
