@@ -1,35 +1,37 @@
-/* .navigation */
-.nav {
+/* Top Navigation */
+nav {
+    position: relative fixed;
+    top: 0;
     width: 100%;
-    height: 70px;
+    height: auto;
+    display: flex;
+    justify-content: center;
     background-color: #000000;
     padding-top: 0px;
+    padding-bottom: 0px;
     clear: both;
     margin: auto;
 }
 
-.nav p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 20px;
-    line-height: 40px;
-    float: left;
-    padding: 0px 20px;
-}
-
-.nav ul {
+nav ul {
     float: left;
 }
 
-.nav ul li {
-    display: block;
+nav ul li {
+    display: flex;
     float: left;
+    vertical-align: center;
+    text-align: center;
     list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-end;
     position: relative;
-    border-radius: 25px;
+    border-radius: 10px;
+    word-wrap: break-word;
 }
 
-.nav ul li a {
+nav ul li a {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     float: left;
@@ -40,40 +42,67 @@
     font-size: 16px;	
 }
 
-.nav a:hover {
+nav a:hover {
     background-color: #0000cd;
     color: #ffffff;
 }
 
-.nav a.active {
+nav a.active {
     background-color: #4885ed;
     color:#ffffff;
 }
 
-.nav .icon {
-    display: none;
+/* Bottom Navigation */
+footer {
+    position: fixed relative;
+    bottom: 0;
+    width: 100%;
+    height: flex;
+    display: flex;
+    justify-content: left;
+    background-color: #000000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    clear: both;
+    margin: auto;
 }
 
-/* For mobile devices */
-@media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
+footer ul {
+    float: left;
 }
 
-/* Make page responsive to browser window */
-@media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+footer ul li {
+    display: flex;
+    float: left;
+    vertical-align: center;
+    text-align: center;
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+footer ul li a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 14px;
+    text-decoration: none;
+    font-size: 16px;	
+}
+
+footer a:hover {
+    background-color: #0000cd;
+    color: #ffffff;
+}
+
+footer a.active {
+    background-color: #4885ed;
+    color:#ffffff;
+
 }

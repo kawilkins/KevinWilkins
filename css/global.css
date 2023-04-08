@@ -11,13 +11,14 @@
 
 /* Content formatting */
 .content {
+    position: flex;
     padding: 10px;
     align-content: center;
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
     background-color: #E6E6E6;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
 }
 
 .grid-container {
@@ -27,6 +28,8 @@
     margin: auto;
     background-color: #E6E6E6;
     align-content: center;
+    height: 100%;
+    clear: both;
 }
 
 .profilePicture {
@@ -53,17 +56,4 @@
 
 .hyperlink {
     text-decoration: none;
-}
-
-/* Buy Me A Coffee */
-.BuyMeCoffee {
-    float: left;
-}
-
-/* Website Version */
-.SiteVersion {
-    text-align: right;
-    padding-right: 10px;
-    color: #FFFFFF;
-    font-family: 'Courier New', Courier, monospace;
 }
