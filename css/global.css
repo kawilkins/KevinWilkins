@@ -1,5 +1,5 @@
 /*Body parameters*/
-.main {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
@@ -7,6 +7,12 @@
     margin: auto;
     width: auto;
     clear: both;
+}
+
+/* Site Version */
+.siteVersion {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
 }
 
 /* Content formatting */
