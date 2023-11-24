@@ -5,12 +5,19 @@ nav {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: #000000;
     padding-top: 0px;
     padding-bottom: 0px;
     clear: both;
     margin: auto;
+}
+
+nav h1 {
+    text-decoration: none;
+    font-family: monospace;
+    color: #ffffff;
+    cursor: default;
 }
 
 nav ul {
