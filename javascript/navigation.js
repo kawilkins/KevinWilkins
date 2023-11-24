@@ -3,6 +3,9 @@ class TopNavigation extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <nav>
+            <h1>
+                Kevin Wilkins
+            </h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="changelog.html">Change Log</a></li>
