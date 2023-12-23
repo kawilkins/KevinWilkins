@@ -1,12 +1,12 @@
 - Merge branch 'dev-topmenu'
-- Removed <hr> element.
-- Added <h1> element for name of website.
+- Removed `<hr>` element.
+- Added `<h1>` element for name of website.
 - Updated site version.
-- Updated styling of <h1> within navigation.
-- Removed <hr> element.
-- Added <h1> element for name of website.
+- Updated styling of `<h1>` within navigation.
+- Removed `<hr>` element.
+- Added `<h1>` element for name of website.
 - Updated site version.
-- Updated styling of <h1> within navigation.
+- Updated styling of `<h1>` within navigation.
 - Updated bio.
 - Removed "Buy Me A Coffee" promotion.
 - Added then removed sentence in paragraph for testing.
