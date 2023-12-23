@@ -8,7 +8,6 @@ class TopNavigation extends HTMLElement {
             </h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="changelog.html">Change Log</a></li>
                 <li><a href="pwgen.html">Password Generator</a></li>
             </ul>
         </nav>`
