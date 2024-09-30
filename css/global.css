@@ -21,7 +21,7 @@ body {
     padding: 10px;
     align-content: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 60%;
     background-color: #E6E6E6;
     padding: 20px;
     overflow-y: auto;
@@ -39,19 +39,22 @@ body {
 }
 
 .profilePicture {
-    float: left;
+    float: right;
     margin: 10px;
-    height: 165px;
+    height: 180px;
     width: 200px;
 }
 
 /* Paragraph */
 .paragraph {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
+    font-size: 1.125em;
     max-width: 100%;
     margin: auto;
+    line-height: 1.25;
     word-wrap: break-word;
-    white-space: pre-line;
+    /*white-space: pre-line;*/
+    margin-bottom: 1.5em;
 }
 
 /* Hyperlinks */
