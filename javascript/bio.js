@@ -7,7 +7,7 @@ class briefBio extends HTMLElement {
             <ul>
                 <li>Migrated employee emails to Microsoft Exchange</li>
                 <li>Responded to and resolve employee trouble tickets</li>
-                <li>Migrated servers from ceph system to VMware solution</li>
+                <li>Migrated servers from KVM system to VMware solution</li>
                 <li>Participated in on-call rotation</li>
             </ul>
         <b>Time with employer:</b> 5 years `
