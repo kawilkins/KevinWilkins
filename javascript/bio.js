@@ -2,7 +2,7 @@
 class briefBio extends HTMLElement {
     connectedCallback(){
         const startDate = new Date("2019-03-27");
-        const now = Date();
+        const now = new Date();
         const diffDate = now - startDate;
         const timeSince = new Date(diffDate);
 
