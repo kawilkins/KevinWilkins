@@ -1,6 +1,15 @@
 // Brief intro
 class briefBio extends HTMLElement {
     connectedCallback(){
+        const startDate = new Date("2019-03-27");
+        const now = Date();
+        const diffDate = now - startDate;
+        const timeSince = new Date(diffDate);
+
+        console.log("Start Date:", startDate);
+        console.log("Current Date:", now);
+        console.log("Years:", year, "Months:", month, "Weeks:", week, "Days:", day);
+
         this.innerHTML = `
         <b>Current role:</b> MIS Administrator</br>
         <b>Projects and Responsibilities:</b>
@@ -10,7 +19,7 @@ class briefBio extends HTMLElement {
                 <li>Migrated servers from KVM system to VMware solution</li>
                 <li>Participated in on-call rotation</li>
             </ul>
-        <b>Time with employer:</b> 5 years `
+        <b>Time with employer:</b> ${year} years, ${month} months, ${week} weeks, ${day} days `;
     }
 }
 
