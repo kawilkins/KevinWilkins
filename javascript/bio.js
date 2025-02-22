@@ -28,7 +28,8 @@ class briefBio extends HTMLElement {
         <b>Projects and Responsibilities:</b>
             <ul>
                 <li>Migrated employee emails to Microsoft Exchange</li>
-                <li>Responded to and resolve employee trouble tickets</li>
+                <li>Evaluated and upgraded workstations to be compliant with Microsoft Intune</li>
+                <li>Responded to and resolved end user trouble tickets</li>
                 <li>Migrated servers from KVM system to VMware solution</li>
                 <li>Participated in on-call rotation</li>
             </ul>
@@ -47,7 +48,8 @@ class summaryBio extends HTMLElement {
         </p>
         <p class="paragraph">
             I have worked a project that migrated our company email and file share to Microsoft Exchange, OneDrive, and SharePoint.
-            Most recently I have been assigned to assist in our project of migrating our servers from a Kernel-based VM system to a new VMware solution.
+            This also included evaluating existing end user workstations and upgrading them to be compliant with Microsoft Intune.
+            I also assisted a project of migrating our servers from a Kernel-based VM system to a new VMware solution.
         </p>
         <p class="paragraph">
             Outside of working hours I enjoy reading and discussing topics and questions related to science, technology, and philosophy.
@@ -58,7 +60,7 @@ class summaryBio extends HTMLElement {
         </p>
         <p class="paragraph">
             I have a few projects that can be found on my <a href="https://github.com/kawilkins" class="hyperlink" target="_blank">GitHub</a>.
-            These projects mainly include work in HTML/CSS, JavaScript, and C++.
+            These projects mainly include work in C++, shell scripting, and web development.
             While the extent of my work is smaller than I would like I am proactive in challenging myself.`
     }
 }
