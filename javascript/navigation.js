@@ -6,6 +6,7 @@ class TopNavigation extends HTMLElement {
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/kawilkins" target="_blank">GitHub</a></li>
                 <li><a href="pwgen.html">Password Generator</a></li>
                 <li><a href="https://github.com/kawilkins/KevinWilkins/issues" target="_blank">Bug Report</a></li>
             </ul>
