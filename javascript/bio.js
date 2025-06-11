@@ -59,9 +59,11 @@ class summaryBio extends HTMLElement {
             There is always something new to learn!
         </p>
         <p class="paragraph">
-            I have a few projects that can be found on my <a href="https://github.com/kawilkins" class="hyperlink" target="_blank">GitHub</a>.
-            These projects mainly include work in C++, shell scripting, and web development.
-            While the extent of my work is smaller than I would like I am proactive in challenging myself.`
+            At home I maintain a Proxmox Virtual Environment (PVE) that runs a small fleet of Linux virtual machines (VM).
+            All servers maintain their updates using <code>ansible</code> which features custom <code>systemd</code> service files.
+            This enables me to schedule automated software updates.
+            I have also set up an open source cloud monitoring tool and learned how to tweak custom alerts sent to me via Discord.
+        </p>`
     }
 }
 
