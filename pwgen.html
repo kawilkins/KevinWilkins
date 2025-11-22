@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="icon" type="image/x-icon" href="images/WilkinsLogo.ico">
+        <link rel="icon" type="image/x-icon" href="images/WilkinsLogo.ico">
 
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="apps/passwd/pwgen.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/side_nav.css">
+        <link rel="stylesheet" type="text/css" href="apps/passwd/pwgen.css">
 
-    <script src="javascript/global.js" defer></script>
-    <script src="javascript/navigation.js" defer></script>
-    <script src="apps/passwd/pwgen.js" defer></script>
+        <script src="javascript/global.js" defer></script>
+        <script src="javascript/side_nav.js" defer></script>
+        <script src="apps/passwd/pwgen.js" defer></script>
 
-    <title>Kevin Wilkins / Password Generator</title>
-  </head>
-  <body class="main">
-
-    <top-navigation></top-navigation>
-
-      <div class="MainContent grid-container app container">
-        <h1 class="title">Password Generator</h1>
-        <i>v0.2.0</i>
-
-        <h3 class="password-display" id="passwordDisplay">password</h3>
-
-        <form id="passwordGeneratorForm" class="form">
-          <label for="characterAmountNumber">Password Length</label>
-
-          <div class="character-amount-container">
-            <input type="range" min="9" max="25" value="10" id="characterAmountRange">
-            <input class="number-input" type="number" min="9" max="25" value="16" id="characterAmountNumber">
-          </div>
-
-          <label for="includeUppercase">Use Uppercase</label>
-          <input type="checkbox" id="includeUppercase">
-
-          <label for="includeNumbers">Use Numbers</label>
-          <input type="checkbox" id="includeNumbers">
-	  
-          <label for="includeSymbols">Use Symbols</label>
-          <input type="checkbox" id="includeSymbols">
-
-          <button type="submit" class="btn">Generate Password</button>
-        </form>
-      </div>
-  </body>
+        <title>Kevin Wilkins / Password Generator</title>
+    </head>
+    <body class="main">
+        <side-nav></side-nav>
+        <div class="MainContent app container">
+            <h1 class="title">Password Generator</h1>
+            <i>v0.2.0</i>
+            <h3 class="password-display" id="passwordDisplay">password</h3>
+            <form id="passwordGeneratorForm" class="form">
+                <label for="characterAmountNumber">Password Length</label>
+                <div class="character-amount-container">
+                <input type="range" min="9" max="25" value="10" id="characterAmountRange">
+                <input class="number-input" type="number" min="9" max="25" value="16" id="characterAmountNumber">
+                </div>
+                <label for="includeUppercase">Use Uppercase</label>
+                <input type="checkbox" id="includeUppercase">
+                <label for="includeNumbers">Use Numbers</label>
+                <input type="checkbox" id="includeNumbers">
+                <label for="includeSymbols">Use Symbols</label>
+                <input type="checkbox" id="includeSymbols">
+                <button type="submit" class="btn">Generate Password</button>
+            </form>
+        </div>
+    </body>
 </html>
