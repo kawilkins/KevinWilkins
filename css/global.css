@@ -9,40 +9,18 @@ body {
     clear: both;
 }
 
-/* Site Version */
-.siteVersion {
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-}
-
-/* Content formatting */
-.content {
-    position: flex;
-    padding: 10px;
-    align-content: center;
-    margin: auto;
-    max-width: 60%;
-    background-color: #E6E6E6;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-gap: 5px;
-    max-width: auto;
-    margin: auto;
-    background-color: #E6E6E6;
-    align-content: center;
-    height: 100%;
-    clear: both;
-}
-
 .profilePicture {
     float: right;
     margin: 10px;
     height: 200px;
     width: 180px;
+}
+
+div.content {
+  margin-left: 300px;
+  margin-right: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
 /* Paragraph */
