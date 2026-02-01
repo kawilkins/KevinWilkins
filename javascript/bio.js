@@ -32,6 +32,7 @@ class briefBio extends HTMLElement {
                 <li>Responded to and resolved end user trouble tickets</li>
                 <li>Migrated servers from KVM system to VMware solution</li>
                 <li>Participated in on-call rotation</li>
+                <li>Performed routine system maintenance, including OS and software upgrades</li>
             </ul>
         <b>Time with employer:</b> ${year} years, ${month} months, ${week} weeks, ${day} days `;
     }
@@ -44,12 +45,13 @@ class summaryBio extends HTMLElement {
             I am an MIS Administrator for an Internet Service Provider (ISP).
             My primary day-to-day responsibilities include responding to and resolving end user trouble tickets and participating in the on-call rotation.
             I also oversee configuring, imaging, and troubleshooting end user work stations.
-            Other projects and tasks are assigned to me as needed.
+            Other projects and tasks are assigned to me as needed and I see every task as an opportunity to learn and strengthen my knowledge base.
         </p>
         <p class="paragraph">
-            I have worked a project that migrated our company email and file share to Microsoft Exchange, OneDrive, and SharePoint.
+            I migrated my organization's email and file share to Microsoft Exchange, OneDrive, and SharePoint.
             This also included evaluating existing end user workstations and upgrading them to be compliant with Microsoft Intune.
-            I also assisted a project of migrating our servers from a Kernel-based VM system to a new VMware solution.
+            I also provided assistance migrating our server from a Kernel-based VM (KVM) system to a new VMware solution.
+            Additionally, I installed CAT 5e Ethernet cabling to connect additional equipment to my organization's network while being mindful of security and best practice.
         </p>
         <p class="paragraph">
             Outside of working hours I enjoy reading and discussing topics and questions related to science, technology, and philosophy.
@@ -60,9 +62,8 @@ class summaryBio extends HTMLElement {
         </p>
         <p class="paragraph">
             At home I maintain a Proxmox Virtual Environment (PVE) that runs a small fleet of Linux virtual machines (VM).
-            All servers maintain their updates using <code>ansible</code> which features custom <code>systemd</code> service files.
-            This enables me to schedule automated software updates.
-            I have also set up an open source cloud monitoring tool and learned how to tweak custom alerts sent to me via Discord.
+            All servers maintain their updates using <b>ansible</b> which features custom <b>systemd</b> service files that enable scheduling updates to happen automatically.
+            I have also set up an open source cloud based monitoring tool and learned how to tweak custom alerts sent to me via Discord.
         </p>`
     }
 }
