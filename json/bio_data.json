@@ -2,14 +2,16 @@
     "startDate": "2019-03-27",
     "currentRole": "MIS Administrator",
     "responsibilities": [
-        "Responded to and resolved end user Jira requests and issues.",
+        "Investigated and resolved end user issues and requests.",
         "Participated in on-call rotation.",
+        "Acquired, managed, and tracked organization issued assets.",
         "Securely and efficiently set up new users."
     ],
     "projects": [
         "Migrated organization email to Microsoft Exchange.",
         "Evaluated and upgraded workstations to be compliant with Microsoft Intune.",
         "Migrated servers from legacy system to new virtualization solution.",
-        "Performed routine system maintenance, including OS and software upgrades."
+        "Performed routine system maintenance, including OS and software upgrades.",
+        "Leveraged existing systems to optimize asset tracking for the organization."
     ]
 }
