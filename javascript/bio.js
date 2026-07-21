@@ -1,57 +1,72 @@
 // Brief intro
 class briefBio extends HTMLElement {
-    connectedCallback(){
-        const startDate = new Date("2019-03-27");
-        const now = new Date();
-        const diffDate = now - startDate;
-        const timeSince = new Date(diffDate);
+    async connectedCallback() {
+        try {
+            // Fetch JSON data from bio_data.JSON
+            const response = await fetch('/json/bio_data.json')
+            if (!response.ok) throw new Error('Failure to load bio_data')
+            const bioData = await response.json();
 
-        const convertYear = 365.25 * 24 * 3600 * 1000;
-        const convertMonth = convertYear / 12;
-        const convertWeek = 7 * 24 * 3600 * 1000;
-        const convertDay = 24 * 3600 * 1000;
+            // Time calculation
+            const startDate = new Date(bioData.startDate);
+            const now = new Date();
+            const diffDate = now - startDate;
 
-        const year = Math.floor(diffDate / convertYear);
-        const remainderYear = diffDate % convertYear;
-        const month = Math.floor(remainderYear / convertMonth);
-        const remainderMonth = remainderYear % convertMonth;
-        const week = Math.floor(remainderMonth / convertWeek);
-        const remainderWeek = remainderMonth % convertWeek;
-        const day = Math.floor(remainderWeek / convertDay);
+            const convertYear = 365.25 * 24 * 3600 * 1000;
+            const convertMonth = convertYear / 12;
+            const convertWeek = 7 * 24 * 3600 * 1000;
+            const convertDay = 24 * 3600 * 1000;
 
-        console.log("Start Date:", startDate);
-        console.log("Current Date:", now);
-        console.log("Years:", year, "Months:", month, "Weeks:", week, "Days:", day);
+            const year = Math.floor(diffDate / convertYear);
+            const remainderYear = diffDate % convertYear;
+            const month = Math.floor(remainderYear / convertMonth);
+            const remainderMonth = remainderYear % convertMonth;
+            const week = Math.floor(remainderMonth / convertWeek);
+            const remainderWeek = remainderMonth % convertWeek;
+            const day = Math.floor(remainderWeek / convertDay);
 
-        this.innerHTML = `
-        <b>Current role:</b> MIS Administrator</br>
-        <b>Projects and Responsibilities:</b>
-            <ul>
-                <li>Migrated employee emails to Microsoft Exchange</li>
-                <li>Evaluated and upgraded workstations to be compliant with Microsoft Intune</li>
-                <li>Responded to and resolved end user trouble tickets</li>
-                <li>Migrated servers from KVM system to VMware solution</li>
-                <li>Participated in on-call rotation</li>
-                <li>Performed routine system maintenance, including OS and software upgrades</li>
-            </ul>
-        <b>Time with employer:</b> ${year} years, ${month} months, ${week} weeks, ${day} days `;
+            console.log("Start Date:", startDate);
+            console.log("Current Date:", now);
+            console.log("Years:", year, "Months:", month, "Weeks:", week, "Days:", day);
+
+            // Build responsibilities list
+            const responsibilities = bioData.responsibilities
+                .map(item => `<li>${item}</li>`)
+                .join('');
+
+            // Build projects list
+            const projects = bioData.projects
+                .map(item => `<li>${item}</li>`)
+                .join('');
+
+            this.innerHTML = `
+            <b>Current role:</b> ${bioData.currentRole}<br><br>
+            <b>Responsibilities:</b>
+            <ul style="margin-top: 4px; margin-bottom: 12px;">${responsibilities}</ul>
+            <b>Projects:</b>
+            <ul style="margin-top: 4px; margin-bottom: 12px;">${projects}</ul>
+            <b>Time with employer:</b> ${year} years, ${month} months, ${week} weeks, ${day} days `;
+        } catch (error) {
+            console.error('bio_data:', error);
+            this.innerHTML = `<p>Error loading bio_data.</p>`;
+        }
     }
 }
 
 class summaryBio extends HTMLElement {
-    connectedCallback(){
+    connectedCallback() {
         this.innerHTML = `
         <p class="paragraph">
-            I am an MIS Administrator for an Internet Service Provider (ISP).
-            My primary day-to-day responsibilities include responding to and resolving end user trouble tickets and participating in the on-call rotation.
-            I also oversee configuring, imaging, and troubleshooting end user work stations.
-            Other projects and tasks are assigned to me as needed and I see every task as an opportunity to learn and strengthen my knowledge base.
+            As an MIS Administrator, I am responsible for resolving end-user support requests and managing the configuration, imaging, and troubleshooting of workstations.
+            My on-call responsibilities involve responding to server alerts after hours to ensure my organization's technical infrastructure is performing optimally.
+            Beyond my assigned responsibilities, I seek opportunities to contribute by volunteering my assistance to support my colleagues projects and tasks.
+            I approach every task and project as an opportunity to contribute to the organization's success while continuing to develop my knowledge and skills.
         </p>
         <p class="paragraph">
             I migrated my organization's email and file share to Microsoft Exchange, OneDrive, and SharePoint.
             This also included evaluating existing end user workstations and upgrading them to be compliant with Microsoft Intune.
-            I also provided assistance migrating our server from a Kernel-based VM (KVM) system to a new VMware solution.
-            Additionally, I installed CAT 5e Ethernet cabling to connect additional equipment to my organization's network while being mindful of security and best practice.
+            I also provided assistance migrating our Linux virtual machines from a legacy system to a fresher and modern solution.
+            Additionally, I installed and connected additional equipment to my organization's network while being mindful of security and best practice.
         </p>
         <p class="paragraph">
             Outside of working hours I enjoy reading and discussing topics and questions related to science, technology, and philosophy.
