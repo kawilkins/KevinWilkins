@@ -1,0 +1,15 @@
+{
+    "startDate": "2019-03-27",
+    "currentRole": "MIS Administrator",
+    "responsibilities": [
+        "Responded to and resolved end user Jira requests and issues.",
+        "Participated in on-call rotation.",
+        "Securely and efficiently set up new users."
+    ],
+    "projects": [
+        "Migrated organization email to Microsoft Exchange.",
+        "Evaluated and upgraded workstations to be compliant with Microsoft Intune.",
+        "Migrated servers from legacy system to new virtualization solution.",
+        "Performed routine system maintenance, including OS and software upgrades."
+    ]
+}
