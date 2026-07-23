@@ -3,7 +3,7 @@ class briefBio extends HTMLElement {
     async connectedCallback() {
         try {
             // Fetch JSON data from bio_data.JSON
-            const response = await fetch('/json/bio_data.json')
+            const response = await fetch('/data/json/bio_data.json')
             if (!response.ok) throw new Error('Failure to load bio_data')
             const bioData = await response.json();
 
@@ -47,39 +47,31 @@ class briefBio extends HTMLElement {
             <ul style="margin-top: 4px; margin-bottom: 12px;">${projects}</ul>
             <b>Time with employer:</b> ${year} years, ${month} months, ${week} weeks, ${day} days `;
         } catch (error) {
-            console.error('bio_data:', error);
+            console.error('bio_data: ', error);
             this.innerHTML = `<p>Error loading bio_data.</p>`;
         }
     }
 }
 
 class summaryBio extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <p class="paragraph">
-            As an MIS Administrator, I am responsible for resolving end-user support requests and managing the configuration, imaging, and troubleshooting of workstations.
-            My on-call responsibilities involve responding to server alerts after hours to ensure my organization's technical infrastructure is performing optimally.
-            Beyond my assigned responsibilities, I seek opportunities to contribute by volunteering my assistance to support my colleagues projects and tasks.
-            I approach every task and project as an opportunity to contribute to the organization's success while continuing to develop my knowledge and skills.
-        </p>
-        <p class="paragraph">
-            I migrated my organization's email and file share to Microsoft Exchange, OneDrive, and SharePoint.
-            This also included evaluating existing end user workstations and upgrading them to be compliant with Microsoft Intune.
-            I also provided assistance migrating our Linux virtual machines from a legacy system to a fresher and modern solution.
-            Additionally, I installed and connected additional equipment to my organization's network while being mindful of security and best practice.
-        </p>
-        <p class="paragraph">
-            Outside of working hours I enjoy reading and discussing topics and questions related to science, technology, and philosophy.
-            I am very passionate about learning and desire to share what I know.
-            It is edifying and a privilege to be able to work in a field that is constantly discovering solutions to better our world.
-            Each challenge presents an opportunity for continued learning, resolution of an issue, and encountering a different perspective.
-            There is always something new to learn!
-        </p>
-        <p class="paragraph">
-            At home I maintain a Proxmox Virtual Environment (PVE) that runs a small fleet of Linux virtual machines (VM).
-            All servers maintain their updates using <b>ansible</b> which features custom <b>systemd</b> service files that enable scheduling updates to happen automatically.
-            I have also set up an open source cloud based monitoring tool and learned how to tweak custom alerts sent to me via Discord.
-        </p>`
+    async connectedCallback() {
+        try {
+            const response = await fetch("/data/bio_summary.txt");
+            const text = await response.text();
+            if (!response.ok) throw new Error('Failure to load bio_summary: ${response.status}');
+
+            const paragraphs = text
+                .trim()
+                .split(/\n\s*\n+/)
+                .filter(p => p.trim() !== '');
+
+            this.innerHTML = paragraphs
+                .map(paragraph => `<p class="paragraph">${paragraph.trim()}</p>`)
+                .join('\n');
+        } catch (error) {
+            console.error('bio_summary: ', error);
+            this.innerHTML = `<p><code>Error loading bio_summary.</code></p>`;
+        }
     }
 }
 
