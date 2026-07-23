@@ -12,6 +12,7 @@
         "Evaluated and upgraded workstations to be compliant with Microsoft Intune.",
         "Migrated servers from legacy system to new virtualization solution.",
         "Performed routine system maintenance, including OS and software upgrades.",
-        "Leveraged existing systems to optimize asset tracking for the organization."
+        "Leveraged existing systems to optimize asset tracking for the organization.",
+        "Used PowerShell to optimize and enhance task flow for efficiency."
     ]
 }
