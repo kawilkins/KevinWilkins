@@ -8,11 +8,15 @@ This also included evaluating existing end user workstations and upgrading them 
 I also provided assistance migrating our Linux virtual machines from a legacy system to a fresher and modern solution.
 Additionally, I installed and connected additional equipment to my organization's network while being mindful of security and best practice.
 
-Outside of working hours I enjoy reading and discussing topics and questions related to science, technology, and philosophy.
-I am very passionate about learning and desire to share what I know.
 It is edifying and a privilege to be able to work in a field that is constantly discovering solutions to better our world.
 Each challenge presents an opportunity for continued learning, resolution of an issue, and encountering a different perspective.
 There is always something new to learn!
+
+Outside of work, much of my time is spent exploring ideas and discussing questions across science, technology, philosophy, and psychology.
+A longtime appreciation for board games includes a particular fondness for chess.
+The board is always open to a friendly match, and I have made myself available to anyone looking to learn the game or improve their strategy.
+When I am not exploring other subjects, there is a good chance I am reading science fiction.
+Lifelong learning is a driving passion, as is sharing knowledge with others and helping make complex ideas more accessible.
 
 At home I maintain a Proxmox Virtual Environment (PVE) that runs a small fleet of Linux virtual machines (VM).
 All servers maintain their updates using <b>ansible</b> which features custom <b>systemd</b> service files that enable scheduling updates to happen automatically.
